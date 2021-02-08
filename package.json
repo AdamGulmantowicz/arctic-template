@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "generate:ssl": "npx devcert-cli generate localhost && mv localhost.cert snowpack.crt && mv localhost.key snowpack.key",
+    "generate:pwa:icons": "npx pwa-asset-generator logo.png public/icons",
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "echo \"Error: no test specified\" && exit 1"
