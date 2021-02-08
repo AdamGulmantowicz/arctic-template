@@ -1,0 +1,37 @@
+{
+  "name": "arctic",
+  "version": "1.0.0",
+  "description": "Basic setup for snowpack, alpine, spruce, tailwind.",
+  "main": "index.js",
+  "scripts": {
+    "generate:ssl": "npx devcert-cli generate localhost && mv localhost.cert snowpack.crt && mv localhost.key snowpack.key",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alpine",
+    "spruce",
+    "tailwind",
+    "snowpack"
+  ],
+  "author": "Adam Gulmantowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.1.0",
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1",
+    "snowpack": "^3.0.11",
+    "workbox-precaching": "^6.1.0"
+  },
+  "dependencies": {
+    "@ryangjchandler/spruce": "^2.6.3",
+    "alpinejs": "^2.8.0",
+    "autoprefixer": "^10.2.4",
+    "tailwindcss": "^2.0.3",
+    "workbox-cacheable-response": "^6.1.0",
+    "workbox-expiration": "^6.1.0",
+    "workbox-routing": "^6.1.0",
+    "workbox-strategies": "^6.1.0"
+  }
+}

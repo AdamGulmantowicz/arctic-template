@@ -1,0 +1,9 @@
+{
+   "name": "Arctic Project",
+   "short_name": "arctic",
+   "static_url": "/?home=true",
+   "icons": [],
+   "theme_color": "#2E5E82",
+   "background_color": "#ffffff",
+   "display": "fullscreen"
+}
